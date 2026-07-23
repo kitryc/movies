@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>maps</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body, html {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="mapstitle">maps</h1>
+        <p id="text1">this is where all my documentaries go. so i can see what parts of the earth i have a little bit more historical knowledge on.</p>
+        <p id="text2">this probably won't be as extensive as my movies list, but whatever🏹</p>
+        <p id="time">6:45 a.m. september 10, 2025</p>
+        
+        <div>
+            <form>
+                <fieldset style="border: 2.75px solid white; padding: 10px; width: 220px;">
+                    <legend>location style</legend>
+                    <input type="radio" name="choice" id="documentarymaps" value="documentaries" checked>
+                    <label for="documentarymaps">documentaries</label>
+                </br>
+                    <input type="radio" name="choice" id="moviemaps" value="movies">
+                    <label for="moviemaps">movies</label>
+                </br>
+                    <input type="checkbox" id="present">
+                    <label for="present">since beginning</label>
+                </fieldset>
+            </form>
+        </div>
+        
+        
+        <div id="map"></div>
+        <div style="margin-top: 10px; display: flex; justify-content: center; align-items: center;">
+            <button onclick="location.href = 'movies.html';" class="buttons">go back!</button>
+        </div>
+    </body>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="maps.js"></script>
+</html>
